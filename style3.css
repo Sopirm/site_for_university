@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Gill Sans, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 1px solid black; 
+}
+
+header {
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #d2eeed;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.group {
+    text-align: right;
+}
+
+
+
+nav {
+    margin-top: 10px; 
+    padding: 10px 0;
+    border-top: 1px solid black; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3a7388;
+    font-weight:700;
+
+}
+
+
+nav ul li a:active {
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+aside {
+    width: 200px;
+    padding: 20px;
+    background-color: #2B7A78;
+    border-right: 1px solid black;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h2 
+{
+    font-size:larger;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+
+.intro {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.intro p {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-icons {
+    right: 10px;
+    bottom: 10px; 
+}
+
+.footer-icons img {
+    width: 30px; 
+    height: 30px;
+    margin-left: 10px; 
+}
+
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-elems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-elems p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d2eeed;
+    border-top: 1px solid black;
+    min-height: 50px;
+    
+}
+
+.rounded-button {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px 0px black;
+    transition: background-color 0.3s ease;
+}
+
+.rounded-button:hover {
+    background-color: #f0f0f0;
+}
+
+
+.content {
+    overflow-y: auto;
+    overflow-y: scroll;
+}
+
+iframe {
+    width: 500px;
+    height: 400px;
+}
+
+object {
+    width: 100%;
+    height: 800px;
+}
+
+.a-aside 
+{
+  font-size: 15px;
+  font-weight:lighter;
+}
+
+.a-aside:hover {
+    text-shadow: -0   -1px 0   #000000;
+    color: #000000;
+}
+
+.a-aside:active {
+    color: #ffffff;
+}
+
+/* Стили по умолчанию (для больших экранов) */
+@media (max-width: 1200px) {
+
+    .header-top {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    
+
+    .content {
+        padding: 10px;
+    }
+
+    .intro {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+    /* Мобильные устройства */
+@media (max-width: 768px) {
+
+    aside {
+        display: none; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    .intro {
+        flex-direction: column-reverse; 
+        align-items: flex-start;
+    }
+
+    .profile-pic {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+
+    .video-main {
+        width: 100%; 
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-elems {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+    }
+
+    .group {
+        text-align: left;
+    }
+
+    .content table th, .content table td {
+        width: auto; 
+    }
+
+    iframe {
+        width: 100%; 
+        height: 300px; 
+        border: none; 
+    }
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #17252A; 
+    font-weight: bold; 
+}
+
+  .navbar-nav .nav-link:hover {
+    color: #9c9c9c;
+  }
+  
+  nav {
+    margin-top: 10px; 
+    padding: 10px 0;
+}
+
+
+/* Центрирование ссылок */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px !important; /* Интервал между ссылками */
+    transition: all 0.3s ease !important; /* Добавляем плавный переход */
+    display: inline-block !important; /* Важно для работы transform */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; 
+}
+
+.navbar-nav .nav-item:hover {
+    transform: scale(1.1) !important; /* Увеличиваем элемент на 10% при наведении */
+}
+
+/* Закругление углов navbar */
+nav.navbar {
+    background-color: #2B7A78 !important;
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 380px; /* Установите нужную высоту */
+    object-fit: cover;
+}
+
+.carousel.slide {
+    max-width: 700px;
+}
+.carousel-caption.d-none.d-md-block {
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Черная обводка */
+}
+
+
+.table th, .table td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid black !important;
+}
+
+.table th {
+    background-color: #868686;
+    color: #ffffff;
+}
+
+
+/* Обеспечиваем черные границы для таблицы, заголовков и ячеек */
+.table.custom-hover,
+.table.custom-hover td {
+    border: 1px solid rgb(0, 0, 0) !important;
+    border-collapse: collapse;
+}
+
+/* Чередование цветов строк */
+.table.custom-hover tr:nth-child(even) {
+    background-color: #9c9c9c !important;
+}
+
+.table.custom-hover tr:nth-child(odd) {
+    background-color: #ffffff !important;
+}
+
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Кнопка изначально скрыта */
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #2B7A78;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center; /* Центрирование текста */
+    width: auto; /* Автоматическая ширина кнопки */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    
+    /* Добавлено для центрирования текста */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#scrollTopButton:hover {
+    background-color: #3a7388;
+}
+
+.accordion-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 19.2px;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+}
+
+.accordion-button:hover {
+    color: #2B7A78;
+}
+
+.accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
+    opacity: 0;
+}
+
+.accordion-content.active {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+.accordion-button-pract {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 19.2px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+}
+
+.accordion-button-pract:hover {
+    color: #2B7A78;
+}
+
+.accordion-content-pract {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
+    opacity: 0;
+}
+
+.accordion-content-pract.active {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+aside ul li .a-aside {
+    font-size: 15px !important;
+    font-weight: lighter !important;
+    transition: transform 0.3s ease !important;
+    display: inline-block !important;
+    position: relative !important;
+}
+
+aside ul li .a-aside:hover {
+    text-shadow: -0 -1px 0 #000000 !important;
+    color: #000000 !important;
+    transform: scale(1.1) !important;
+}
+
+.show-second-semester-practices {
+    margin-top: 10px;
+}
+
+
