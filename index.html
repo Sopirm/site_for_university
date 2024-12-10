@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать на мой сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="group">
+                <p>Группа ЭФБО-03-23</p>
+                <p>Головин Максим Дмитриевич</p>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="main3.html">Первый семестр</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="dev_but1">Второй семестр</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="main2.html">Услуги</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="dev_but2">Авторизация</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+        <aside>
+            <ul>
+                <li><a>Навигация по&nbsp;странице</a></li>
+                <li><a class="a-aside" href="#frontend">Фронтенд</a></li>
+                <li><a class="a-aside" href="#backend">Бэкенд</a></li>
+            </ul>
+        </aside>
+        
+        <section class="content">
+            <h1>Добро пожаловать на мой сайт</h1>
+            <div class="intro">
+                <p>Меня зовут Головин Максим Дмитриевич и я начинающий специалист по веб-разработке.</p>
+                <div class="profile-pic">
+                    <img src="profile.jpg" alt="Profile Picture" class="rotate-on-hover">
+                </div>
+            </div>
+
+            <div id="successMessage" style="display: none;">Форма успешно отправлена!</div>
+
+            <h2><a id="frontend">Фронтенд</a></h2>
+            <div class="accordion" id="frontendAccordion">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Что такое фронтенд?
+                      </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#frontendAccordion">
+                      <div class="accordion-body">
+                          Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую привлекательность.
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <video class="video-main" controls width="300">
+                <source src="video1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <h2><a id="backend">Бэкенд</a></h2>
+            <div class="accordion" id="backendAccordion">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Что такое бэкенд?
+                      </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#backendAccordion">
+                      <div class="accordion-body">
+                          Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных д��я создания логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность данных.
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <video class="video-main" controls width="300">
+                <source src="video2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            
+        </section>
+    </main>
+    <script src="button_up.js"></script>
+    <script src="info_alert_nav.js"></script>
+    <button onclick="scrollToTop()" id="scrollTopButton" class="rounded-button">Наверх</button>
+
+    <footer>
+        <div class="footer-elems">
+        <p>© Головин Максим Дмитриевич, 2024</p>
+        <div class="footer-icons">
+            <a class="icons-a" href="https://wa.me/79252986151"><img src="whatsapp.png" alt="WhatsApp"></a>
+            <a class="icons-a" href="https://vk.com"><img src="vk.png" alt="VK"></a>
+        </div>
+        </div>
+    </footer>
+    <script src="form.js"></script>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Имя*:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Комментарий*:</label>
+                    <textarea id="comment" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
