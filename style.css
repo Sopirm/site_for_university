@@ -235,7 +235,7 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+    background-color: rgba(0,0,0,0.4); /* Полуп��озрачный фон */
   }
   
   /* Контент модального окна */
@@ -388,6 +388,10 @@ footer {
 
     .group {
         text-align: left;
+    }
+
+    .card {
+        margin-bottom: 20px; /* Добавляем отступ снизу для каждой карточки */
     }
 }
 
